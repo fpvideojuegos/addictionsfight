@@ -8,4 +8,8 @@ María López Márquez
 
 Cristina Castillo
 
+<<<<<<< HEAD
 prueba
+=======
+Jonathan Rosas Ortega
+>>>>>>> master
