@@ -12,7 +12,3 @@ Cristina Castillo
 
 Jonathan Rosas Ortega
 
-<<<<<<< HEAD
-prueba
-=======
->>>>>>> master
