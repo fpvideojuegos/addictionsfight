@@ -1,0 +1,61 @@
+{
+    "MENU": {
+        "SETTINGS": "AJUSTES",
+        "PLAY": "JUGAR",
+        "INTRO": "INTRO",
+        "SCORES": "PUNTOS",
+        "CREDITS": "CRÉDITOS"
+    },
+    "LEVELSELECT":{
+        "MENU": "MENÚ",
+        "BONUS": "NIVEL EXTRA",
+        "LEVELS": "NIVELES",
+        "LEVEL": "NIVEL",
+        "LEVELDONE": "Nivel completado",
+        "LEVELFINISHED": "Nivel alcanzado con estrellas completas",
+        "LEVELNOTDONE": "Nivel no terminado todavía"      
+    },
+    "SETTINGLEVEL": {
+        "SOUND": "SONIDO",
+        "LANGUAGE": "CAMBIAR IDIOMA",
+        "RESET": "REINICIAR JUEGO",
+        "DONE": "HECHO"
+    },
+    "BONUSLEVEL":{                
+        "INSTRUCTIONS": "CONSIGUE 10 PIEZAS DE PUZZLE EN MENOS DE 60 SEGUNDOS",
+        "COINS": "PUZZLE",
+        "TIME": "TIEMPO",
+        "YOUWIN": "1 VIDA EXTRA"
+    },
+    "LEVELINTRO":{
+        "SKIP": "SALTAR",
+        "DANIELA_MUM": "DANIELA DÓNDE ESTAS? CUÁNTO TE QUEDA PARA LLEGAR?",
+        "DANIELA_ANSWER": "VOY POR EL PARQUE, ME QUEDAN 5 MINUTOS"
+    },
+    "LEVEL1": {
+        "FINDBRACELET": "DANIELA TIENES QUE BUSCAR LA PULSERA MÁGICA"
+    },
+    "LEVEL2": {
+        "FINDCLOTHES": "TIENES QUE BUSCAR LA ROPA DE LA PREHISTORIA",
+        "FINDLEVER": "TENDRÁS QUE BUSCAR LA PALANCA PARA DERRIBAR EL MURO Y COGER LA ROPA"
+    },
+    "LEVEL3":{
+        "FRUITS": "FRUTAS",
+        "WHATAPROBLEM": "QUÉ PROBLEMÓN! CÓMO PODEMOS PASAR?",
+        "GIVEMAMMOTH": "TIENES QUE DAR A MAMUT 20 PIEZAS DE COMIDA SANA Y EVITAR TOCAR LA COMIDA BASURA"
+    },
+    "LEVEL5":{        
+        "MAGICFRUIT": "TENDRÁS QUE COGER LA FRUTA MÁGICA. TENDRÁS QUE BUSCAR UNA PIEDRA Y UN PALO \n\nPARA FORMAR UN HACHA. Y BUSCAR UN ÁRBOL CAÍDO PARA CONSTRUIR UNA ESCALERA\n\nQUE TE LLEVARÁ A LO ALTO DEL GRAN ÁRBOL"
+    },
+    "LEVEL6":{
+        "BURNTMYSELF": "AY QUE ME QUEMO! ESTO ESTÁ MÁS CALIENTE QUE EL PUCHERO DE MI ABUELA!",
+        "LOOKTHEMAP": "DANIELA BUSCA EL MAPA PARA PODER ORIENTARTE"
+    },
+    "COMMONTEXT":{
+        "WEDIDIT": "BIEN LO HEMOS CONSEGUIDO!!",
+        "LIVES": "VIDAS "
+    },
+    "UI": {
+               
+    }
+}
