@@ -347,6 +347,7 @@ const GameConstants = {
     Tiles: {
         CAVE_STONE: 'caveStones',
         FOREST_PACK : 'forestPack_32x32',
+        PLATFORM_TILESET: 'platform1',
         GRASS_TILES: 'grasstiles',        
         JUNGLE : 'jungle',
         WOODS: 'woods',
