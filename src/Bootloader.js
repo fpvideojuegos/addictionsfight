@@ -240,6 +240,7 @@ class Bootloader extends Phaser.Scene {
         //UI
         this.load.image('volumeOn', 'img/ui/volumeON.png');
         this.load.image('volumeOff', 'img/ui/volumeOFF.png');
+        this.load.image('inventory', 'img/ui/cofre.png');
         //CONTROLS (For input Touch Versions)
         this.load.image('controlUp', 'img/ui/controlUp.png');
         this.load.image('controlDown', 'img/ui/controlDown.png');
