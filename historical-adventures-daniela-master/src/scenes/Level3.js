@@ -26,9 +26,25 @@ class Level3 extends BasicScene {
         this.createCoins();
         //HealthText
         this.createHealthText();
+
+        
         //Tilemap
-        this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES);
+        this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES); //Pinta WORLD con collision cuadruple
+
+        this.platformLayerLevel3 = this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES, 'UpCollision',true ); //Solo el Layer 'upcollision' se pasa a variable
+
+        //'UpCollision' tendrá collision solo por arriba
+        let x, y, tile;
+        for (x = 0; x < this.platformLayerLevel3.width; x++) {
+            for (y = 1; y < this.platformLayerLevel3.height; y++) {                
+                tile = this.platformLayerLevel3.getTileAt(x, y);                                
+                if (tile !== null) {                    
+                    tile.setCollision(false, false, true, false); 
+                }
+            }
+        }
         this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES, GameConstants.Layers.LANDSCAPE, false);
+        
 
         //PRIVATE SCENE ELEMENTS
         this.findTransparentObjects(GameConstants.Layers.SPIKES,GameConstants.Sprites.Spike.KEY, true);
@@ -61,12 +77,6 @@ class Level3 extends BasicScene {
         this.textDialog.setDepth(3);
        
 
-
-       
-
-
-
-       
         //Text Dialog
         this.textDialog = this.add.dynamicBitmapText(30, 570, 'pixel', GameConstants.Texts.BUSCAR_ROPA_TROGLODITA.toUpperCase(), 16);
         this.textDialog.setScrollFactor(0);
