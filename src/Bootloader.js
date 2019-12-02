@@ -56,6 +56,7 @@ class Bootloader extends Phaser.Scene {
         //Level2
         this.load.tilemapTiledJSON('Level2', '../src/worlds/level2/forestmap.json');
         this.load.image('forestPack_32x32', '../src/worlds/level2/forestPack_32x32.png');
+        this.load.image('platform1', '../src/worlds/level2/platform1.png')
         //Level3
         this.load.tilemapTiledJSON('Level3', '../src/worlds/level3/grasstiles.json');
         this.load.image('grasstiles', '../src/worlds/level3/grasstiles.png');
@@ -90,7 +91,7 @@ class Bootloader extends Phaser.Scene {
         //Ahora mismo esta de ejemplo
         //http://kidskunst.info/46/05451-2d-game-background-cave.htm
         //Level2
-        this.load.image('bg_Level2', 'img/backgrounds/bg_forest.png');
+        this.load.image('bg_Level2', 'img/backgrounds/fondo3.jpg');
         //https://www.gameart2d.com/free-platformer-game-tileset.html
         //Level 3 
         this.load.image('bg_Level3', 'img/backgrounds/background_level3.png');

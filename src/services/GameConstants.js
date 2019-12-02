@@ -350,7 +350,8 @@ const GameConstants = {
         GRASS_TILES: 'grasstiles',        
         JUNGLE : 'jungle',
         WOODS: 'woods',
-        VOLCANO: 'spritesheet'
+        VOLCANO: 'spritesheet',
+        PLATFORM_TILESET: 'platform1'
     },
     Layers: {
         WORLD: 'World',

@@ -28,6 +28,7 @@ class Level2 extends BasicScene {
         //Tilemap
         this.paintLayerAndCreateCollision(GameConstants.Tiles.FOREST_PACK);
         this.paintLayerAndCreateCollision(GameConstants.Tiles.FOREST_PACK, 'Landscape', false);
+        this.paintLayerAndCreateCollision(GameConstants.Tiles.PLATFORM_TILESET, 'Platform', true);
 
         //PRIVATE SCENE ELEMENTS
         let wall =  this.paintLayerAndCreateCollision(GameConstants.Tiles.FOREST_PACK, 'Wall');
