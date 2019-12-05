@@ -77,8 +77,31 @@
                  "type":"openwall",
                  "visible":true,
                  "width":0,
-                 "x":1798,
-                 "y":606
+                 "x":1808.66666666667,
+                 "y":591.333333333333
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":36,
+         "name":"Inventary",
+         "objects":[
+                {
+                 "height":0,
+                 "id":81,
+                 "name":"ball",
+                 "point":true,
+                 "rotation":0,
+                 "type":"ball",
+                 "visible":true,
+                 "width":0,
+                 "x":249.333333333333,
+                 "y":542.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -541,8 +564,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":36,
- "nextobjectid":81,
+ "nextlayerid":37,
+ "nextobjectid":83,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.2.5",

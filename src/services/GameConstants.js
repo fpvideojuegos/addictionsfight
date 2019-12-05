@@ -87,6 +87,13 @@ const GameConstants = {
             OBJECT_ID: 'Bat'
             
         },
+        Ball: {
+            KEY: 'ball',
+            ID: 'ball',
+            OBJECT_NAME: 'Balls',
+            OBJECT_ID: 'Ball'
+            
+        },
         Bees: {
             KEY: 'bee',
             ID: 'bee',
