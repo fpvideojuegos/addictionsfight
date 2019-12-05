@@ -56,7 +56,11 @@ class Bootloader extends Phaser.Scene {
         //Level2
         this.load.tilemapTiledJSON('Level2', '../src/worlds/level2/forestmap.json');
         this.load.image('forestPack_32x32', '../src/worlds/level2/forestPack_32x32.png');
-        this.load.image('platform1', '../src/worlds/level2/platform1.png')
+        this.load.image('platform1', '../src/worlds/level2/platform1.png');
+
+        //ball 
+        this.load.image("ball", "img/objects/ball.png");
+
         //Level3
         this.load.tilemapTiledJSON('Level3', '../src/worlds/level3/grasstiles.json');
         this.load.image('grasstiles', '../src/worlds/level3/grasstiles.png');

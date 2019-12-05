@@ -67,14 +67,6 @@ class Level2 extends BasicScene {
         this.joystick.body.setAllowGravity(false);
         this.anims.play(GameConstants.Anims.JOYSTICK, this.joystick);
 
-        //Create Book
-        this.book = this.map.createFromObjects('book', 'openwall', GameConstants.Sprites.Joystick.KEY);
-        this.physics.world.enable(this.book);
-        this.book = this.book[0];
-        this.book.setScale(1.5);
-        this.book.body.setAllowGravity(false);
-        this.anims.play(GameConstants.Anims.BOOK, this.book);
-
 
         //Wall collider        
         this.physics.add.collider(this.daniela, this.joystick, () => {
@@ -82,6 +74,31 @@ class Level2 extends BasicScene {
             wall.setCollisionByExclusion([0]);
             wall.alpha=0;
         });
+
+
+        //Create ball
+        //Check DB if ball is false the next two blocks
+        this.DB = store.get(GameConstants.DB.DBNAME);
+        if (!this.DB.inventory.ball){
+
+            
+            this.inventoryObjs = this.map.createFromObjects('Inventary', 'ball','ball');     
+            
+            this.physics.world.enable(this.inventoryObjs);
+            this.ball = this.inventoryObjs[0];
+            this.ball.setScale(0.25);
+            this.ball.body.setAllowGravity(false);
+            this.ball.setTexture("ball");
+            
+            //Inventory collider        
+            this.physics.add.collider(this.daniela, this.ball, () => {
+                this.ball.destroy();
+                this.DB.inventory.ball = true;
+                store.set(GameConstants.DB.DBNAME, this.DB);
+            });
+
+        }
+
 
         this.physics.add.collider(this.daniela, this.cavemanclothe, () => {
             this.music.stop();
