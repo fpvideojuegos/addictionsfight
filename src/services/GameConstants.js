@@ -87,8 +87,6 @@ const GameConstants = {
             OBJECT_ID: 'Bat'
             
         },
-<<<<<<< HEAD
-=======
         Ball: {
             KEY: 'ball',
             ID: 'ball',
@@ -96,7 +94,6 @@ const GameConstants = {
             OBJECT_ID: 'Ball'
             
         },
->>>>>>> master
         Bees: {
             KEY: 'bee',
             ID: 'bee',
@@ -342,12 +339,8 @@ const GameConstants = {
     },
     UI:{
         VOLUMEON:'volumeOn',
-<<<<<<< HEAD
         VOLUMEOFF:'volumeOff',
         INVENTORY: 'inventory'
-=======
-        VOLUMEOFF:'volumeOff'
->>>>>>> master
     },
     Fonts:{
         PIXEL: 'pixel'  
