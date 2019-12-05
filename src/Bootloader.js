@@ -56,7 +56,15 @@ class Bootloader extends Phaser.Scene {
         //Level2
         this.load.tilemapTiledJSON('Level2', '../src/worlds/level2/forestmap.json');
         this.load.image('forestPack_32x32', '../src/worlds/level2/forestPack_32x32.png');
+<<<<<<< HEAD
         this.load.image('platform1', '../src/worlds/level2/platform1.png')
+=======
+        this.load.image('platform1', '../src/worlds/level2/platform1.png');
+
+        //ball 
+        this.load.image("ball", "img/objects/ball.png");
+
+>>>>>>> master
         //Level3
         this.load.tilemapTiledJSON('Level3', '../src/worlds/level3/grasstiles.json');
         this.load.image('grasstiles', '../src/worlds/level3/grasstiles.png');
@@ -240,7 +248,10 @@ class Bootloader extends Phaser.Scene {
         //UI
         this.load.image('volumeOn', 'img/ui/volumeON.png');
         this.load.image('volumeOff', 'img/ui/volumeOFF.png');
+<<<<<<< HEAD
         this.load.image('inventory', 'img/ui/cofre.png');
+=======
+>>>>>>> master
         //CONTROLS (For input Touch Versions)
         this.load.image('controlUp', 'img/ui/controlUp.png');
         this.load.image('controlDown', 'img/ui/controlDown.png');
