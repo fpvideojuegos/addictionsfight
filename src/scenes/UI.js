@@ -37,7 +37,6 @@ class UI extends Phaser.Scene {
 
         //Cofre que lleva a la ventana de inventario
         const inventoryButton = this.add.image(this.width - 190, 8 , GameConstants.UI.INVENTORY)
-                    /*.setScrollFactor(0).setDepth(10).setOrigin(0).setAlpha(1).setScale(0.2);*/
                     .setScrollFactor(0).setDepth(10).setOrigin(0).setAlpha(1).setScale();
         inventoryButton.setInteractive();
 
