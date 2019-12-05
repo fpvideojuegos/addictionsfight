@@ -104,8 +104,8 @@ class Bootloader extends Phaser.Scene {
         //this.load.image("bg_Level4", "img/backgrounds/Ocean.png");
         //PARALLAX BG Level 4
         // environment
-        this.load.image('bg-clouds', 'img/backgrounds/parallax_level4/bg-clouds.png');
-        this.load.image("bg-mountains", 'img/backgrounds/parallax_level4/bg-mountains.png');
+        //this.load.image('bg-clouds', 'img/backgrounds/parallax_level4/bg-clouds.png');
+        //this.load.image("bg-mountains", 'img/backgrounds/parallax_level4/bg-mountains.png');
         this.load.image("bg-trees", 'img/backgrounds/parallax_level4/bg-trees.png');
 
         //Level 5 
