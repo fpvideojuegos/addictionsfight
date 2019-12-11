@@ -340,7 +340,8 @@ const GameConstants = {
     UI:{
         VOLUMEON:'volumeOn',
         VOLUMEOFF:'volumeOff',
-        INVENTORY: 'inventory'
+        INVENTORY: 'inventory',
+        INVENTPANEL: 'inventpanel'
     },
     Fonts:{
         PIXEL: 'pixel'  

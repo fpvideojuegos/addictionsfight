@@ -1,4 +1,6 @@
 import GameConstants from "../services/GameConstants.js";
+import BackgroundMask from "../gameObjects/BackgroundMask.js";
+import BasicScene from "./BasicScene.js";
 
 /**
  * Escena que será usada como interfaz para Daniela.
@@ -40,6 +42,33 @@ class UI extends Phaser.Scene {
                     .setScrollFactor(0).setDepth(10).setOrigin(0).setAlpha(1).setScale();
         inventoryButton.setInteractive();
 
+        //Ventana de inventario
+        inventoryButton.on('pointerdown', () => {
+            // como pausar la escena del level que sea
+            //this.scene.scene.physics.pause();
+            this.scene.scenename.physics.pause();
+
+            let mask = new BackgroundMask(this);
+            mask.show();
+
+            let inventoryImage = this.add.image(200, 100, GameConstants.UI.INVENTPANEL).setScrollFactor(0).setOrigin(0);
+            inventoryImage.setInteractive();
+
+            this.DB = store.get(GameConstants.DB.DBNAME);
+            
+            if (this.DB.inventory.ball){
+                this.ball = this.add.image(300, 200, "ball").setScale(0.2).setOrigin(0);
+            }
+
+            inventoryImage.on('pointerdown', () => {
+                this.ball.destroy();
+                this.closeInventory(mask, inventoryImage);                
+            });
+
+
+        });
+
+        //Otros botones de la interfaz
         const playAgainButton = this.add.image(this.width - 140, 15 , GameConstants.Sprites.PlayAgain.KEY)
                     .setScrollFactor(0).setDepth(10).setOrigin(0).setAlpha(1).setScale(0.65); 
         playAgainButton.setInteractive();
@@ -49,6 +78,12 @@ class UI extends Phaser.Scene {
 
            
 
+    }
+
+    closeInventory(mask, inventoryImage){
+        mask.hide();
+        inventoryImage.destroy();
+        this.scene.scene.physics.resume();
     }
 
     createControls() {
