@@ -46,7 +46,7 @@ class UI extends Phaser.Scene {
         inventoryButton.on('pointerdown', () => {
             // como pausar la escena del level que sea
             //this.scene.scene.physics.pause();
-            this.scene.scenename.physics.pause();
+            //this.scene.scenename.physics.pause();
 
             let mask = new BackgroundMask(this);
             mask.show();
@@ -61,7 +61,9 @@ class UI extends Phaser.Scene {
             }
 
             inventoryImage.on('pointerdown', () => {
+                if (this.DB.inventory.ball){
                 this.ball.destroy();
+                }
                 this.closeInventory(mask, inventoryImage);                
             });
 
