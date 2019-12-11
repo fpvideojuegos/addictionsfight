@@ -276,9 +276,9 @@ const GameConstants = {
         }
     },
     Textures: {
-        BG_MENU: 'bg_Level2',
+        BG_MENU: 'bg_Menu',
         BG_LEVEL1: 'bg_Level1',
-        BG_LEVEL2: 'bg_Menu',
+        BG_LEVEL2: 'bg_Level2',
         BG_LEVEL3: 'bg_Level3',
         BG_LEVEL4:  'bg_Level4',        
         BG_LEVEL5:  'bg_Level5',        
@@ -340,7 +340,8 @@ const GameConstants = {
     UI:{
         VOLUMEON:'volumeOn',
         VOLUMEOFF:'volumeOff',
-        INVENTORY: 'inventory'
+        INVENTORY: 'inventory',
+        INVENTPANEL: 'inventpanel'
     },
     Fonts:{
         PIXEL: 'pixel'  

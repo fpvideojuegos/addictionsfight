@@ -20,7 +20,7 @@ class SettingsLevel extends BasicScene {
         let y = height / 2 -50;
         
         // background         
-        this.bg1 = this.add.image(0, 0, GameConstants.Textures.BG_MENU).setOrigin(0).setScale(1);        
+        this.bg1 = this.add.image(0, 0, GameConstants.Textures.BG_LEVEL2).setOrigin(0).setScale(1);        
     
                         
         const menuButton = this.add.dynamicBitmapText(80, y * 2, 'pixel', this.TG.tr('LEVELSELECT.MENU'), 24).setTint(0x0080FF);        
