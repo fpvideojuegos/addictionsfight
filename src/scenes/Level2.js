@@ -10,9 +10,10 @@ class Level2 extends BasicScene {
         this.target = GameConstants.Levels.LEVEL3;
     }
 
-    preload() {
+    //Borramos esto porque la UI ya se llama desde BasicScene, y crea conflicto a la hora de coger el data de la escena
+    /*preload() {
         this.scene.launch('UI');
-    }
+    }*/
     
     create() {
         //Daniela Creation
