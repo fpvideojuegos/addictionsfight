@@ -44,9 +44,8 @@ class UI extends Phaser.Scene {
 
         //Ventana de inventario
         inventoryButton.on('pointerdown', () => {
-            
+            // como pausar la escena del level que sea
             this.backlevel = this.scene.get(this.scenename);
-            console.log(this.backlevel);
             this.backlevel.physics.pause();
 
             let mask = new BackgroundMask(this);
@@ -58,27 +57,12 @@ class UI extends Phaser.Scene {
             this.DB = store.get(GameConstants.DB.DBNAME);
             
             if (this.DB.inventory.ball){
-                this.ball = this.add.image(300, 200, "ball").setScale(1).setOrigin(0);
-            }
-
-            if (this.DB.inventory.book){
-                this.book = this.add.image(360, 200, "book").setScale(1).setOrigin(0);
-            }
-
-            if (this.DB.inventory.racket){
-                this.racket = this.add.image(420, 200, "racket").setScale(1).setOrigin(0);
-            }
-
-            if (this.DB.inventory.banana){
-                this.banana = this.add.image(480, 200, "banana").setScale(1).setOrigin(0);
+                this.ball = this.add.image(300, 200, "ball").setScale(0.2).setOrigin(0);
             }
 
             inventoryImage.on('pointerdown', () => {
                 if (this.DB.inventory.ball){
                 this.ball.destroy();
-                this.book.destroy();
-                this.racket.destroy();
-                this.banana.destroy();
                 }
                 this.closeInventory(mask, inventoryImage);                
             });

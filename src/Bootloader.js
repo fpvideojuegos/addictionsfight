@@ -60,12 +60,6 @@ class Bootloader extends Phaser.Scene {
 
         //ball 
         this.load.image("ball", "img/objects/ball.png");
-        //book 
-        this.load.image("book", "img/objects/book.png");
-        //racket 
-        this.load.image("racket", "img/objects/racket.png");
-        //banana 
-        this.load.image("banana", "img/objects/banana.png");
 
         //Level3
         this.load.tilemapTiledJSON('Level3', '../src/worlds/level3/grasstiles.json');
@@ -93,6 +87,8 @@ class Bootloader extends Phaser.Scene {
         
         
         //BACKGROUNDS
+        //SelectCharacter
+        this.load.image('bg_SelectChar', 'img/backgrounds/bg_selectchar.png');
         //Menu
         this.load.image('bg_Menu', 'img/backgrounds/fondo3.jpg');
         //Level1

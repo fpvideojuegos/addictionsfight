@@ -41,6 +41,10 @@ class Menu extends BasicScene {
 
                 this.playMenuScenesBSO();
         }
+
+        this.selectCharacterButton = this.add.dynamicBitmapText(width, 50, 'pixel', this.TG.tr('MENU.CHARACTER')).setTint(0xD23B19).setInteractive();
+        this.selectCharacterButton.setPosition(50, 50);
+        this.changeSceneFromButton(this.selectCharacterButton, GameConstants.Levels.SELECTCHARACTER);
         
         this.settingsButton = this.add.dynamicBitmapText(width, 50, 'pixel', this.TG.tr('MENU.SETTINGS')).setTint(0x0cff00).setInteractive();
         this.settingsButton.setPosition(width - this.settingsButton.width - 50, 50);
