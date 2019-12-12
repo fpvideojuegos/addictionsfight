@@ -19,7 +19,10 @@ const DB = {
     extralifes : 0,
     sound: true,
     inventory : {
-        ball: false
+        ball: false,
+        book: false,
+        racket: false,
+        banana: false
     },
     worlds: {
         Level1: {            

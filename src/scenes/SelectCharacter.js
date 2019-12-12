@@ -22,6 +22,6 @@ class SelectCharacter extends BasicScene {
         let y = height / 2 -50;
         
         // background        
-        this.bg1 = this.add.image(0, 0, GameConstants.Textures.BG_LEVEL2).setOrigin(0).setScale(1);
+        this.bg = this.add.image(0, 0, GameConstants.Textures.BG_SELECTCHAR).setOrigin(0).setScale(1);
     }
 }
