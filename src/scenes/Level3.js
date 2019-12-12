@@ -27,16 +27,30 @@ class Level3 extends BasicScene {
         //HealthText
         this.createHealthText();
         //Tilemap
-        this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES);
+        this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES); //Pinta WORLD con collision cuadruple
+
+        this.platformLayerLevel3 = this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES, 'UpCollision',true ); //Solo el Layer 'upcollision' se pasa a variable
+
+        //'UpCollision' tendrá collision solo por arriba
+        let x, y, tile;
+        for (x = 0; x < this.platformLayerLevel3.width; x++) {
+            for (y = 1; y < this.platformLayerLevel3.height; y++) {                
+                tile = this.platformLayerLevel3.getTileAt(x, y);                                
+                if (tile !== null) {                    
+                    tile.setCollision(false, false, true, false); 
+                }
+            }
+        }
         this.paintLayerAndCreateCollision(GameConstants.Tiles.GRASS_TILES, GameConstants.Layers.LANDSCAPE, false);
 
         //PRIVATE SCENE ELEMENTS
         this.findTransparentObjects(GameConstants.Layers.SPIKES,GameConstants.Sprites.Spike.KEY, true);
+        /*this.findTransparentObjects(GameConstants.Layers.DOOR1,GameConstants.Sprites.Door1.KEY, true);
+        this.findTransparentObjects(GameConstants.Layers.DOOR2,GameConstants.Sprites.Door2.KEY, true);*/
         
         //FRUITS COLLECTED
         this.fruitsCollected = 10;
         this.fruitDelay = false;
-
 
         //MUSIC and AUDIOS
         this.audioLevel3_DANIELA_WhatAProblem_07 = this.sound.add(this.TG.getActualLang() + "_" + GameConstants.Sound.Level3.DANIELA_QUESTION);
