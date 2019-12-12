@@ -30,6 +30,7 @@ class Menu extends BasicScene {
         this.bg1 = this.add.image(0, 0, GameConstants.Textures.BG_LEVEL2).setOrigin(0).setScale(1);
         //Esto es para la posición del background dibujoPortadaEscaneado.png        
         this.bg = this.add.image(0, 0, GameConstants.Textures.BG_MENU).setOrigin(0).setScale(1);
+        this.bg9 = this.add.image(60, 0, GameConstants.Textures.BG_MENU2).setOrigin(0).setScale(2.2);
 
         //bg sound
         //Only play BG MUSIC  if come from other levels than the main scenes

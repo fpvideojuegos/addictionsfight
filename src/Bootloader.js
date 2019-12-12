@@ -104,6 +104,7 @@ class Bootloader extends Phaser.Scene {
         //http://kidskunst.info/46/05451-2d-game-background-cave.htm
         //Level2
         this.load.image('bg_Level2', 'img/backgrounds/bg_menu.png');
+        this.load.image('bg_Menu2', 'img/backgrounds/logo.png');
         //https://www.gameart2d.com/free-platformer-game-tileset.html
         //Level 3 
         this.load.image('bg_Level3', 'img/backgrounds/background_level3.png');

@@ -278,6 +278,7 @@ const GameConstants = {
     },
     Textures: {
         BG_MENU: 'bg_Level2',
+        BG_MENU2: 'bg_Menu2',
         BG_SELECTCHAR: 'bg_SelectChar',
         BG_LEVEL1: 'bg_Level1',
         BG_LEVEL2: 'bg_Menu',
