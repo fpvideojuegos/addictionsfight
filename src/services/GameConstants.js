@@ -94,6 +94,27 @@ const GameConstants = {
             OBJECT_ID: 'Ball'
             
         },
+        Book: {
+            KEY: 'book',
+            ID: 'book',
+            OBJECT_NAME: 'Books',
+            OBJECT_ID: 'Book'
+            
+        },
+        Racket: {
+            KEY: 'racket',
+            ID: 'racket',
+            OBJECT_NAME: 'Rackets',
+            OBJECT_ID: 'Racket'
+            
+        },
+        Banana: {
+            KEY: 'banana',
+            ID: 'banana',
+            OBJECT_NAME: 'Bananas',
+            OBJECT_ID: 'Banana'
+            
+        },
         Bees: {
             KEY: 'bee',
             ID: 'bee',
