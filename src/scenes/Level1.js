@@ -8,7 +8,7 @@ class Level1 extends BasicScene {
         });
         this.target = GameConstants.Levels.LEVEL2;
     }
-    
+
     create() {
         //Daniela Creation
         this.createDaniela();
