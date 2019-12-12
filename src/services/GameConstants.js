@@ -94,6 +94,27 @@ const GameConstants = {
             OBJECT_ID: 'Ball'
             
         },
+        Book: {
+            KEY: 'book',
+            ID: 'book',
+            OBJECT_NAME: 'Books',
+            OBJECT_ID: 'Book'
+            
+        },
+        Racket: {
+            KEY: 'racket',
+            ID: 'racket',
+            OBJECT_NAME: 'Rackets',
+            OBJECT_ID: 'Racket'
+            
+        },
+        Banana: {
+            KEY: 'banana',
+            ID: 'banana',
+            OBJECT_NAME: 'Bananas',
+            OBJECT_ID: 'Banana'
+            
+        },
         Bees: {
             KEY: 'bee',
             ID: 'bee',
@@ -276,9 +297,9 @@ const GameConstants = {
         }
     },
     Textures: {
-        BG_MENU: 'bg_Menu',
+        BG_MENU: 'bg_Level2',
         BG_LEVEL1: 'bg_Level1',
-        BG_LEVEL2: 'bg_Level2',
+        BG_LEVEL2: 'bg_Menu',
         BG_LEVEL3: 'bg_Level3',
         BG_LEVEL4:  'bg_Level4',        
         BG_LEVEL5:  'bg_Level5',        
@@ -340,7 +361,8 @@ const GameConstants = {
     UI:{
         VOLUMEON:'volumeOn',
         VOLUMEOFF:'volumeOff',
-        INVENTORY: 'inventory'
+        INVENTORY: 'inventory',
+        INVENTPANEL: 'inventpanel'
     },
     Fonts:{
         PIXEL: 'pixel'  

@@ -60,6 +60,12 @@ class Bootloader extends Phaser.Scene {
 
         //ball 
         this.load.image("ball", "img/objects/ball.png");
+        //book 
+        this.load.image("book", "img/objects/book.png");
+        //racket 
+        this.load.image("racket", "img/objects/racket.png");
+        //banana 
+        this.load.image("banana", "img/objects/banana.png");
 
         //Level3
         this.load.tilemapTiledJSON('Level3', '../src/worlds/level3/grasstiles.json');
@@ -88,14 +94,14 @@ class Bootloader extends Phaser.Scene {
         
         //BACKGROUNDS
         //Menu
-        this.load.image('bg_Menu', 'img/backgrounds/bg_menu.png');
+        this.load.image('bg_Menu', 'img/backgrounds/fondo3.jpg');
         //Level1
         this.load.image('bg_Level1', 'img/backgrounds/2560x1440-snapSat1800.jpg');
         //Se cambiara por un dibujo de los niños de una cueva
         //Ahora mismo esta de ejemplo
         //http://kidskunst.info/46/05451-2d-game-background-cave.htm
         //Level2
-        this.load.image('bg_Level2', 'img/backgrounds/fondo3.jpg');
+        this.load.image('bg_Level2', 'img/backgrounds/bg_menu.png');
         //https://www.gameart2d.com/free-platformer-game-tileset.html
         //Level 3 
         this.load.image('bg_Level3', 'img/backgrounds/background_level3.png');
@@ -245,6 +251,7 @@ class Bootloader extends Phaser.Scene {
         this.load.image('volumeOn', 'img/ui/volumeON.png');
         this.load.image('volumeOff', 'img/ui/volumeOFF.png');
         this.load.image('inventory', 'img/ui/bag.png');
+        this.load.image('inventpanel', 'img/ui/inventpanel.png');
         //CONTROLS (For input Touch Versions)
         this.load.image('controlUp', 'img/ui/controlUp.png');
         this.load.image('controlDown', 'img/ui/controlDown.png');
