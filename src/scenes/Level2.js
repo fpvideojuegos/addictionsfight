@@ -10,9 +10,10 @@ class Level2 extends BasicScene {
         this.target = GameConstants.Levels.LEVEL3;
     }
 
-    preload() {
+    //Borramos esto porque la UI ya se llama desde BasicScene, y crea conflicto a la hora de coger el data de la escena
+    /*preload() {
         this.scene.launch('UI');
-    }
+    }*/
     
     create() {
         //Daniela Creation
@@ -79,21 +80,97 @@ class Level2 extends BasicScene {
         //Create ball
         //Check DB if ball is false the next two blocks
         this.DB = store.get(GameConstants.DB.DBNAME);
-        if (!this.DB.inventory.ball){
+        if (!this.DB.inventory.ball) {
 
-            
-            this.inventoryObjs = this.map.createFromObjects('Inventary', 'ball','ball');     
-            
+
+            this.inventoryObjs = this.map.createFromObjects('Inventary', 'ball', 'ball');
+
             this.physics.world.enable(this.inventoryObjs);
             this.ball = this.inventoryObjs[0];
-            this.ball.setScale(0.25);
+            //this.ball.setScale(0.25);
             this.ball.body.setAllowGravity(false);
             this.ball.setTexture("ball");
-            
+            //this.ball.setSize(150,150,50,25);
+            //this.ball.body.immovable = true;
+           //console.log(this.ball);
+            //this.ball.setOrigin(0);
+
             //Inventory collider        
             this.physics.add.collider(this.daniela, this.ball, () => {
                 this.ball.destroy();
                 this.DB.inventory.ball = true;
+                store.set(GameConstants.DB.DBNAME, this.DB);
+            });
+
+        }
+
+        //Create book
+        //Check DB if book is false the next two blocks
+        this.DB = store.get(GameConstants.DB.DBNAME);
+        if (!this.DB.inventory.book) {
+
+
+            this.inventoryObjs = this.map.createFromObjects('Inventary', 'book', 'book');
+
+            this.physics.world.enable(this.inventoryObjs);
+            this.book = this.inventoryObjs[0];
+            //this.book.setScale(0.1);
+            this.book.body.setAllowGravity(false);
+            this.book.setTexture("book");
+
+            //Inventory collider        
+            this.physics.add.collider(this.daniela, this.book, () => {
+                this.book.destroy();
+                this.DB.inventory.book = true;
+                store.set(GameConstants.DB.DBNAME, this.DB);
+            });
+
+        }
+
+
+        //Create banana
+        //Check DB if banana is false the next two blocks
+        this.DB = store.get(GameConstants.DB.DBNAME);
+        if (!this.DB.inventory.banana) {
+
+
+            this.inventoryObjs = this.map.createFromObjects('Inventary', 'banana', 'banana');
+
+            this.physics.world.enable(this.inventoryObjs);
+            this.banana = this.inventoryObjs[0];
+            //this.banana.setScale(0.2);
+            this.banana.body.setAllowGravity(false);
+            this.banana.setTexture("banana");
+
+            //Inventory collider        
+            this.physics.add.collider(this.daniela, this.banana, () => {
+                this.banana.destroy();
+                this.DB.inventory.banana = true;
+                store.set(GameConstants.DB.DBNAME, this.DB);
+            });
+
+        }
+
+
+
+        //Create racket
+        //Check DB if racket is false the next two blocks
+        this.DB = store.get(GameConstants.DB.DBNAME);
+        if (!this.DB.inventory.racket) {
+
+
+            this.inventoryObjs = this.map.createFromObjects('Inventary', 'racket', 'racket');
+
+            this.physics.world.enable(this.inventoryObjs);
+            this.racket = this.inventoryObjs[0];
+            //this.racket.setScale(0.1);
+            this.racket.body.setAllowGravity(false);
+            this.racket.setTexture("racket");
+
+            //Inventory collider        
+            this.physics.add.collider(this.daniela, this.racket, () => {
+                this.racket.destroy();
+                this.DB.inventory.racket = true;
                 store.set(GameConstants.DB.DBNAME, this.DB);
             });
 

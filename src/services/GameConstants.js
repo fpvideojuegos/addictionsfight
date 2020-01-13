@@ -5,6 +5,7 @@ const GameConstants = {
     },
     Levels: {
         MENU: 'Menu',
+        SELECTCHARACTER: 'SelectCharacter',
         SETTINGSLEVEL: 'SettingsLevel',
         LEVELSELECT: 'LevelSelect',
         CREDITS: 'Credits',
@@ -277,6 +278,7 @@ const GameConstants = {
     },
     Textures: {
         BG_MENU: 'bg_Level2',
+        BG_SELECTCHAR: 'bg_SelectChar',
         BG_LEVEL1: 'bg_Level1',
         BG_LEVEL2: 'bg_Menu',
         BG_LEVEL3: 'bg_Level3',
